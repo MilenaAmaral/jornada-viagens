@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"path": "../../../MILENAAMARAL"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"editor.fontFamily": "Fira Code",
+		"editor.fontLigatures": true,
+		"editor.fontSize": 14
+	}
+}
