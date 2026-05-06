@@ -64,7 +64,7 @@ body {
   color: var(--text-secondary-color);
   font-weight: var(--text-weight);
   font-size: 20px;
-  background-color: var(--butoon-primary-color);
+  background-color: var(--butoon-secondary-color);
   border-radius: 16px;
   display: inline-block;
   text-decoration: none;
@@ -74,5 +74,11 @@ body {
 @media screen and (min-width: 768px) {
   .section-title h2 {
     font-size: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+  .button::hover {
+    background-color: var(--butoon-primary-color);
   }
 }
