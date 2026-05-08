@@ -1,10 +1,14 @@
+@import url("./global.css");
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./offers.css");
+
 @font-face {
     font-family: "Montserrat";
     src: url(../fonts/Montserrat-VariableFont_wght.ttf);
     font-style: normal;
     font-display: swap;
 }
-
 
 :root{
     --brackgroud-primary-color: #ffffff;
@@ -20,7 +24,6 @@
     --title-weight: 700;
     --text-weight: 400;
     --menutext-weight: 500;
-
 }
 
 /* CSS RESET */ 
