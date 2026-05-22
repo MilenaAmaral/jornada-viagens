@@ -1,0 +1,229 @@
+.blog-related-section .section-title h3 {
+    font-size: 20px;
+    font-weight: var(--title-weight);
+    text-align: center;
+    color: var(--text-primary-color);
+}
+
+/* --- HERO INDIVIDUAL DO BLOG --- */
+.blog-hero {
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+}
+
+/* Base da imagem do topo */
+.blog-hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../img/hero-blog-mobile.jpg') no-repeat center center/cover;
+    z-index: 1;
+}
+
+.blog-hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 0 24px;
+    max-width: 650px;
+    color: var(--text-secondary-color);
+}
+
+.blog-hero-text h1 {
+    font-size: 36px;
+    font-weight: var(--title-weight);
+    margin-bottom: 12px;
+}
+
+.blog-hero-text p {
+    font-size: 16px;
+    font-weight: var(--text-weight);
+    line-height: 1.5;
+}
+
+/* --- BLOCOS DE CONTEÚDO E TEXTO (Estilo Tipográfico) --- */
+.blog-subtitle {
+    font-size: 22px;
+    font-weight: var(--title-weight);
+    color: var(--text-primary-color);
+    margin: 24px 0 12px 0;
+}
+
+.blog-text {
+    font-size: 16px;
+    font-weight: var(--text-weight);
+    line-height: 26px;
+    color: #444444; 
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+/* --- IMAGENS DO POST DE TOKYO (Padrão inicial: Mobile) --- */
+.blog-post-row {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;
+    margin-bottom: 24px;
+}
+
+.blog-post-col-img {
+    width: 100%;
+    height: 220px;
+    border-radius: 8px;
+    background: url('../img/tokyo-fachada-mobile.png') no-repeat center center/cover;
+}
+
+.blog-panoramic-container {
+    width: 100%;
+    height: 160px;
+    border-radius: 8px;
+    margin: 32px 0;
+    background: url('../img/tokyo-panoramica-mobile.png') no-repeat center center/cover;
+}
+
+/* --- GRID DE CARDS DO BLOG --- */
+.blog-grid-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-primary-color);
+}
+
+.blog-card-thumb {
+    width: 100%;
+    height: 200px;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Imagens dos cards inferiores */
+.img-osaka { background-image: url('../img/osaka-mobile.jpg'); }
+.img-hiroshima { background-image: url('../img/hiroshima-mobile.png'); }
+.img-kyoto { background-image: url('../img/kyoto-mobile.png'); }
+
+.blog-card-content {
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-content h4 {
+    font-size: 22px;
+    font-weight: var(--title-weight);
+    color: var(--text-primary-color);
+    margin-bottom: 8px;
+}
+
+.blog-card-content p {
+    font-size: 15px;
+    font-weight: var(--text-weight);
+    line-height: 22px;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.blog-card-content .button {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* --- TABLET (A partir de 768px) --- */
+@media screen and (min-width: 768px) {
+    .blog-hero {
+        min-height: 400px;
+    }
+    /* Carrega as fotos cortadas para tablet */
+    .blog-hero-img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                          url('../img/hero-blog-tablet.png');
+    }
+    .img-tokyo-fachada { 
+        background-image: url('../img/tokyo-fachada-tablet.png'); 
+    }
+    .img-tokyo-panoramica { 
+        background-image: url('../img/tokyo-panoramica-tablet.png'); 
+    }
+
+    .blog-hero-text {
+        padding: 0 48px;
+    }
+    .blog-hero-text h1 {
+        font-size: 44px;
+    }
+    .blog-post-col-img {
+        height: 300px;
+    }
+    .blog-panoramic-container {
+        height: 240px;
+    }
+    .blog-grid-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 24px;
+    }
+}
+
+/* --- DESKTOP(A partir de 1024px) --- */
+@media screen and (min-width: 1024px) {
+    .blog-hero {
+        min-height: 450px;
+    }
+    /* Carrega as fotos em alta resolução para desktop */
+    .blog-hero-img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                          url('../img/hero-blog-desktop.png');
+    }
+    .img-tokyo-fachada { 
+        background-image: url('../img/tokyo-fachada-desktop.jpg'); 
+    }
+    .img-tokyo-panoramica { 
+        background-image: url('../img/tokyo-panoramica-desktop.png'); 
+    }
+
+    .blog-post-row {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .blog-post-col-text {
+        flex: 1.3;
+    }
+    .blog-post-col-img {
+        flex: 0.7;
+        height: 280px;
+        margin-top: 24px;
+    }
+    .blog-panoramic-container {
+        height: 320px;
+    }
+    .blog-grid-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* --- ULTRA WIDE DESKTOP (A partir de 1440px) --- */
+@media screen and (min-width: 1440px) {
+    .blog-post-col-img {
+        height: 340px;
+    }
+    .blog-panoramic-container {
+        height: 400px;
+    }
+}
