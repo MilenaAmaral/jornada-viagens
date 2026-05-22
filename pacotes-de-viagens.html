@@ -1,263 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta  
-        name="description"
-        content="Jornada Viagens,uma agência apaixonada por criar viagens inesquecíveis"
-    />  
+    <meta name="description" content="Conheça o Japão com a Jornada Viagens. Pacotes exclusivos com hotéis, aéreos e roteiros inesquecíveis." /> 
 
-    <meta name="og:title" content="Jornada Viagens">
-    <meta name="og:description" content="Jornada Viagens,uma agência apaixonada por criar viagens inesquecíveis">
-    <meta name="og:image" content="https://github.com/MilenaAmaral/jornada-viagens/img/logo-footer.png">
+    <meta name="og:title" content="Excursão Japão - Jornada Viagens">
+    <meta name="og:description" content="A jornada para o Oriente perfeito para você relaxar.">
+    <meta name="og:image" content="img/logo-footer.png">
     <meta name="og:type" content="website">
-    <meta name="og:url" content="https://github.com/MilenaAmaral/jornada-viagens">
 
-    <link rel="icon" href="favico.svg" type="xml/svg" />
+    <link rel="icon" href="favico.png" type="xml/svg" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/pacote.css" />
 
-    <title>Jornada Viagens</title>
-  </head>
-  <body>
+    <title>Excursão Japão - Jornada Viagens</title>
+</head>
+<body>
+
     <header class="main-header">
-      <a class="logo" href="index.html" title="voltar para a página inicial">
-        <img
-          class="img-mobile"
-          src="img/bussola-jornada-branco.png"
-          alt="Bussola do logo Jornada Viagens na cor branca"
-        />
-        <img
-          class="img-desktop"
-          src="img/bussola-texto-jornada-branco.png"
-          alt="Logo Jornada Viagens na cor branca"
-        />
-      </a>
-      <div class="navigation-menu">
-        <label for="menu">
-          <img src="img/menu.png" alt="menu" />
-        </label>
-        <input type="checkbox" id="menu" hidden />
-        <nav>
-          <ul class="list-links">
-            <li>
-              <a href="blog.html" target="_blank" title="Acessar Blog">Blog</a>
-            </li>
-            <li>
-              <a
-                class="active"
-                href="pacotes-de-viagens.html"
-                target="_blank"
-                title="Acessar Pacotes de viagem"
-                >Pacotes de viagem</a
-              >
-            </li>
-            <li>
-              <a href="contato.html" target="_blank" title="Acessar Contato"
-                >Contato</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <a class="logo" href="index.html" title="voltar para a página inicial">
+            <img class="img-mobile" src="img/bussola-jornada-branco.png" alt="Bussola do logo Jornada Viagens na cor branca" />
+            <img class="img-desktop" src="img/bussola-texto-jornada-branco.png" alt="Logo Jornada Viagens na cor branca" />
+        </a>
+        <div class="navigation-menu">
+            <label for="menu">
+                <img src="img/menu.png" alt="menu" />
+            </label>
+            <input type="checkbox" id="menu" hidden />
+            <nav>
+                <ul class="list-links">
+                    <li><a href="blog.html" title="Acessar Blog">Blog</a></li>
+                    <li><a href="pacotes-de-viagens.html" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
+                    <li><a href="contato.html" title="Acessar Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <section class="travel-packages hero">
-      <div class="hero-img">
-        <div class="hero-content">
-          <h1>Conheça o Japão!</h1>
-          <hr />
-          <p>
-            A Jornada possui o pacote perfeito para seu estilo e orçamento!
-            Conheça as belas paisagens e a cultura milenar deste belo país!
-          </p>
+
+    <section class="pacote-hero">
+        <div class="pacote-hero-img"></div>
+        <div class="pacote-hero-text">
+            <h1>Conheça o Japão!</h1>
+            <p>A Jornada planeja a viagem perfeita para você relaxar e aproveitar o melhor da cultura milenar e moderna oriental!</p>
         </div>
-      </div>
     </section>
 
-    <section class="travel-packages destinations">
-      <div class="section-title">
-        <h2>Destinos da Excursão</h2>
-        <hr />
-      </div>
-      <div class="destination-items">
-        <article class="item tokyo">
-          <header>
-            <div class="img-item"></div>
-            <h3 class="content-title">Tokyo</h3>
-          </header>
-          <p class="content-text">
-            Tóquio é uma cidade vibrante e cosmopolita, com seus templos
-            históricos, museus de arte moderna e arranha-céus icônicos. Não
-            perca a chance de mergulhar em sua atmosfera fascinante.
-          </p>
-          <footer>
-            <a
-              href="#"
-              class="button"
-              target="_blank"
-              title="Veja mais detalhes do destino Tokyo"
-              >Ver detalhes</a
-            >
-          </footer>
-        </article>
-        <article class="item osaka">
-          <header>
-            <div class="img-item"></div>
-            <h3 class="content-title">Osaka</h3>
-          </header>
-          <p class="content-text">
-            Osaka é uma cidade agitada e moderna no Japãos. A cidade é famosa
-            por sua gastronomia deliciosa e por ser um excelente ponto de
-            partida para explorar outras cidades japonesas próximas.
-          </p>
-          <footer>
-            <a
-              href="#"
-              class="button"
-              target="_blank"
-              title="Veja mais detalhes do destino Osaka"
-              >Ver detalhes</a
-            >
-          </footer>
-        </article>
-      </div>
-    </section>
-    <section class="travel-packages payments">
-      <div class="section-title">
-        <h2>Pagamento</h2>
-        <hr />
-      </div>
-      <div class="content-container">
-        <div class="text-content">
-          <h3 class="content-title">R$4000</h3>
-          <h3 class="content-title">Em até 12x</h3>
+    <section class="pacote-destinos">
+        <div class="section-title">
+            <h2>Destinos da Excursão</h2>
+            <hr />
+        </div>
 
-          <p class="content-text">
-            Viaje pagando em até 12 parcelas no cartão, à vista no crédito com
-            5% de desconto ou no Pix com 10% de desconto!
-          </p>
+        <div class="pacote-destinos-container">
+            <article class="pacote-destino-item">
+                <div class="pacote-destino-thumb img-tokyo-detalhe"></div>
+                <div class="pacote-destino-info">
+                    <h3>Tokyo</h3>
+                    <p>Tóquio é uma cidade vibrante e cosmopolita, com seus templos históricos, museus de arte moderna e arranha-céus icônicos. Não perca a chance de mergulhar em sua atmosfera fascinante.</p>
+                    <a href="#" class="button">Ver detalhes</a>
+                </div>
+            </article>
+
+            <article class="pacote-destino-item">
+                <div class="pacote-destino-thumb img-osaka-detalhe"></div>
+                <div class="pacote-destino-info">
+                    <h3>Osaka</h3>
+                    <p>Osaka é uma cidade agitada e moderna no Japão. A cidade é famosa por sua gastronomia deliciosa e por ser um excelente ponto de partida para explorar outras cidades japonesas próximas.</p>
+                    <a href="#" class="button">Ver detalhes</a>
+                </div>
+            </article>
         </div>
-        <div class="image-gallery">
-          <div class="image first"></div>
-          <div class="image second"></div>
-          <div class="image thirdy colspan-2"></div>
+    </section>
+
+    <section class="pacote-pagamento">
+        <div class="section-title">
+            <h2>Pagamento</h2>
+            <hr />
         </div>
-      </div>
-    </section>
-    <section class="testimonials">
-      <div class="section-title">
-        <h2>Depoimentos</h2>
-        <hr />
-      </div>
-      <div class="testimonial-container">
-        <article>
-          <header>
-            <p>
-              Tive uma experiência inesquecível. O pacote Japão me permitiu
-              explorar de templos antigos a cidades modernas. E o valor coube no
-              bolso, recomendo!
-            </p>
-          </header>
-          <footer>
-            <img
-              src="img/travel-packages/avatar-julio.png"
-              alt="imagem de perfil do cliente Júlio Garibaldi"
-            />
-            <div class="profile-content">
-              <h3>Júlio Garibaldi</h3>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">☆</span>
-                <span class="star">☆</span>
-              </div>
+
+        <div class="pacote-pagamento-container">
+            <div class="pacote-pagamento-valores">
+                <span class="preco-destaque">R$4000</span>
+                <h3>Em até 12x!</h3>
+                <p>Viaje pagando em até 12 parcelas no cartão, à vista no crédito com 5% de desconto ou no Pix com 10% de desconto!</p>
+                <a href="#" class="button btn-comprar">Ver detalhes</a>
             </div>
-          </footer>
-        </article>
-        <article>
-          <header>
-            <p>
-              Minha viagem para Tóquio foi incrível. O itinerário personalizado
-              me permitiu muito em pouco tempo. Excedeu minhas expectativas e já
-              quero viajar com a Jornada novamente!
-            </p>
-          </header>
-          <footer>
-            <img
-              src="img/travel-packages/avatar-lucia.png"
-              alt="imagem de perfil da cliente Lúcia S. Rabello"
-            />
-            <div class="profile-content">
-              <h3>Lúcia S. Rabello</h3>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">☆</span>
-                <span class="star">☆</span>
-              </div>
+
+            <div class="pacote-pagamento-galeria">
+                <div class="galeria-img-item img-pagamento-1"></div>
+                <div class="galeria-img-item img-pagamento-2"></div>
+                <div class="galeria-img-item img-pagamento-3"></div>
             </div>
-          </footer>
-        </article>
-        <article>
-          <header>
-            <p>
-              Minha viagem para Osaka foi inesquecível! A Jornada organizou tudo
-              de forma perfeita, recomendo de olhos fechados!
-            </p>
-          </header>
-          <footer>
-            <img
-              src="img/travel-packages/avatar-olga.png"
-              alt="imagem de perfil da cliente Olga dos Reis"
-            />
-            <div class="profile-content">
-              <h3>Olga dos Reis</h3>
-              <div class="rating">
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">★</span>
-                <span class="star">☆</span>
-                <span class="star">☆</span>
-              </div>
-            </div>
-          </footer>
-        </article>
-      </div>
+        </div>
     </section>
-    <section class="travel-packages bottom-hero">
-      <div class="hero-img"></div>
+
+ <section class="pacote-depoimentos">
+        <div class="section-title">
+            <h2>Depoimentos</h2>
+            <hr />
+        </div>
+
+        <div class="pacote-depoimentos-grid">
+            <article class="depoimento-card">
+                <p class="depoimento-texto">"A Jornada foi uma das melhores agências de viagens que eu já experimentei. O serviço ao cliente foi excepcional, e toda a equipe foi muito atenciosa e prestativa."</p>
+                <footer class="depoimento-autor">
+                    <img src="img/travel-packages/avatar-julio.png" alt="Foto de Júlio Cardozo" />
+                    <div class="autor-info">
+                        <h4>Júlio Cardozo</h4>
+                        <div class="estrelas">★★★★★</div>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="depoimento-card">
+                <p class="depoimento-texto">"Planejar a ida para o Tóquio com eles foi muito mais simples e seguro do que eu imaginava. Recomendo muito o atendimento diferenciado da agência!"</p>
+                <footer class="depoimento-autor">
+                    <img src="img/travel-packages/avatar-lucia.png" alt="Foto de Luísa S. Rebello" />
+                    <div class="autor-info">
+                        <h4>Luísa S. Rebello</h4>
+                        <div class="estrelas">★★★★★</div>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="depoimento-card">
+                <p class="depoimento-texto">"Minha experiência com o Japão foi fantástica! A equipe nos apoiou de forma super atenciosa, recomendo a todos com certeza!"</p>
+                <footer class="depoimento-autor">
+                    <img src="img/travel-packages/avatar-olga.png" alt="Foto de Olga das Dores" />
+                    <div class="autor-info">
+                        <h4>Olga das Dores</h4>
+                        <div class="estrelas">★★★★★</div>
+                    </div>
+                </footer>
+            </article>
+        </div>
+
+        <div class="pacote-footer-banner img-quimonos"></div>
     </section>
+
     <footer class="main-footer">
-      <div class="footer-content">
-        <img src="img/logo-footer.png" alt="logo completo Jornada Viagens" />
-        <p>Projeto desenvolvido por Milena Amaral com base nos estudos da Alura.</p>
-      </div>
-      <div class="footer-social">
-        <p>Acesse nossas redes:</p>
-
-        <a href="#" target="_blank" title="Acesse o Twitter do Jornada Viagens"
-          ><img
-            src="img/icone-twitter.svg"
-            alt="icone do Twitter na cor branca"
-        /></a>
-
-        <a
-          href="#"
-          target="_blank"
-          title="Acesse o Instagram do Jornada Viagens"
-          ><img
-            src="img/icone-instagram.svg"
-            alt="icone do Instagram na cor branca"
-        /></a>
-
-        <a href="#" target="_blank" title="Entre em contato através do whatsapp"
-          ><img
-            src="img/icone-whatsapp.svg"
-            alt="icone do whatsapp na cor branca"
-        /></a>
-      </div>
+        <div class="footer-content">
+            <img src="img/logo-footer.png" alt="logo completo Jornada Viagens" />
+            <p>Projeto desenvolvido por Milena Amaral com base nos estudos da Alura.</p>
+        </div>
+        <div class="footer-social">
+            <p>Acesse nossas redes:</p>
+            <a href="#" title="Acesse o Twitter do Jornada Viagens"><img src="img/icone-twitter.svg" alt="icone do Twitter na cor branca" /></a>
+            <a href="#" title="Acesse o Instagram do Jornada Viagens"><img src="img/icone-instagram.svg" alt="icone do Instagram na cor branca" /></a>
+            <a href="#" title="Entre em contato através do whatsapp"><img src="img/icone-whatsapp.svg" alt="icone do whatsapp na cor branca" /></a>
+        </div>
     </footer>
-  </body>
+
+</body>
 </html>
