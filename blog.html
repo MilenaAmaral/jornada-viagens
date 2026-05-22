@@ -1,55 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>Blog — Jornada Viagens</title>
-  </head>
-  <body>
+    <meta name="description" content="Histórias de viagens de nossos clientes. Inspire-se, encontre roteiros e dicas." /> 
+
+    <meta name="og:title" content="Blog da Jornada - Jornada Viagens">
+    <meta name="og:description" content="Histórias de viagens de nossos clientes.">
+    <meta name="og:image" content="img/logo-footer.png">
+    <meta name="og:type" content="website">
+
+    <link rel="icon" href="favico.png" type="xml/svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Blog - Jornada Viagens</title>
+</head>
+<body>
+
     <header class="main-header">
-      <a class="logo" href="index.html" title="voltar para a página inicial">
-        <img class="img-mobile" src="img/bussola-jornada-branco.png" alt="logo móvel" />
-        <img class="img-desktop" src="img/bussola-texto-jornada-branco.png" alt="logo desktop" />
-      </a>
-      <div class="navigation-menu">
-        <input type="checkbox" id="menu" hidden />
-        <label for="menu"><img src="img/menu.png" alt="menu" /></label>
-        <nav>
-          <ul class="list-links">
-            <li><a href="blog.html" class="active">Blog</a></li>
-            <li><a href="pacotes-de-viagens.html">Pacotes de viagem</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
-        </nav>
-      </div>
+        <a class="logo" href="index.html" title="voltar para a página inicial">
+            <img class="img-mobile" src="img/bussola-jornada-branco.png" alt="Bussola do logo Jornada Viagens na cor branca" />
+            <img class="img-desktop" src="img/bussola-texto-jornada-branco.png" alt="Logo Jornada Viagens na cor branca" />
+        </a>
+        <div class="navigation-menu">
+            <label for="menu">
+                <img src="img/menu.png" alt="menu" />
+            </label>
+            <input type="checkbox" id="menu" hidden />
+            <nav>
+                <ul class="list-links">
+                    <li><a href="blog.html" title="Acessar Blog">Blog</a></li>
+                    <li><a href="pacotes-de-viagens.html" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
+                    <li><a href="contato.html" title="Acessar Contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="content">
-      <section class="section-title">
-        <h2>Blog</h2>
-        <hr />
-      </section>
+    <section class="blog-hero">
+        <div class="blog-hero-img"></div>
+        <div class="blog-hero-text">
+            <h1>Blog da Jornada</h1>
+            <p>Histórias de viagens de nossos clientes. Inspire-se, encontre roteiros e dicas. Qual seu próximo destino?</p>
+        </div>
+    </section>
 
-      <section class="blog-list">
-        <article class="post">
-          <h3>5 lugares imperdíveis em Tóquio</h3>
-          <p>Conteúdo de exemplo — adicione seus posts aqui.</p>
-          <a href="#" class="button">Ler mais</a>
-        </article>
-        <article class="post">
-          <h3>Gastronomia de Osaka: o que provar</h3>
-          <p>Conteúdo de exemplo — adicione seus posts aqui.</p>
-          <a href="#" class="button">Ler mais</a>
-        </article>
-      </section>
-    </main>
+    <section class="blog-post-section">
+        <div class="section-title">
+            <h2>Tokyo</h2>
+            <hr />
+        </div>
+
+        <div class="blog-post-row">
+            <div class="blog-post-col-text">
+                <h3 class="blog-subtitle">Chegada</h3>
+                <p class="blog-text">Nossa jornada começou no Aeroporto Internacional de Narita, localizado a cerca de 60 km de Tóquio. Após desembarcar e passarmos pelos procedimentos de imigração, fomos direto para a estação de trem da JR, de onde pegamos o Narita Express direto para o nosso hotel.</p>
+            </div>
+            <div class="blog-post-col-img img-tokyo-fachada"></div>
+        </div>
+
+        <div class="blog-post-full-width">
+            <h3 class="blog-subtitle">Acomodação</h3>
+            <p class="blog-text">Decidimos nos hospedar em Shinjuku, um bairro movimentado moderno e repleto de opções de entretenimento, compras e restaurantes. Ficamos em um hotel bem localizado a poucos metros da estação de trem e com uma bela vista da cidade.</p>
+        </div>
+
+        <div class="blog-panoramic-container img-tokyo-panoramica"></div>
+
+        <div class="blog-post-full-width">
+            <h3 class="blog-subtitle">Explorando a cidade</h3>
+            <p class="blog-text">Começamos nosso tour pela cidade com uma visita ao famoso Templo Senso-ji, um dos mais antigos e importantes templos budistas do Japão. Caminhamos pelas ruas comerciais que cercam o templo, onde encontramos muitas lembranças e doces tradicionais japoneses, como os manjus, que são bolinhos recheados com pasta de feijão doce.</p>
+            <p class="blog-text">Em seguida, visitamos o famoso cruzamento de Shibuya, um dos mais movimentados do mundo, onde observamos a harmonia dos pedestres atravessando as ruas.</p>
+            <p class="blog-text">No dia seguinte, visitamos o Parque Ueno, que abriga o Museu Nacional de Tóquio, onde pudemos conhecer a história e cultura japonesa. A visita foi muito enriquecedora e nos permitiu compreender melhor as tradições locais.</p>
+
+            <h3 class="blog-subtitle">Compras</h3>
+            <p class="blog-text">Tóquio é famosa por suas lojas e centros comerciais. Passamos um dia fazendo compras em Ginza, uma área nobre da cidade com marcas de luxo e lojas de departamento. Também visitamos Akihabara, conhecida como o paraíso dos eletrônicos, jogos e cultura geek.</p>
+
+            <h3 class="blog-subtitle">Gastronomia</h3>
+            <p class="blog-text">Não se pode falar de Japão sem mencionar a gastronomia. Tivemos a oportunidade de experimentar uma grande variedade de pratos típicos, como sushi, sashimi, ramen, tempura e os doces tradicionais como o mochi.</p>
+
+            <h3 class="blog-subtitle">Concluindo...</h3>
+            <p class="blog-text">Nossa viagem a Tóquio com a agência Jornada Viagens foi uma experiência inesquecível! A equipe nos apoiou em todos os detalhes, desde a reserva do hotel até as dicas dos melhores lugares para visitar e comer. Recomendamos a todos que desejam fazer uma viagem incrível ao Japão.</p>
+        </div>
+    </section>
+
+    <section class="blog-related-section">
+        <div class="section-title">
+            <h3>Talvez você também goste destes posts...</h3>
+            <hr />
+        </div>
+
+        <div class="blog-grid-cards">
+            <article class="blog-card">
+                <div class="blog-card-thumb img-osaka"></div>
+                <div class="blog-card-content">
+                    <h4>Osaka</h4>
+                    <p>Osaka é uma cidade agitada e moderna no Japão. A cidade é famosa por sua gastronomia deliciosa e por ser um excelente ponto de partida para explorar outras cidades japonesas próximas.</p>
+                    <a href="#" class="button">Ver detalhes</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-thumb img-hiroshima"></div>
+                <div class="blog-card-content">
+                    <h4>Hiroshima</h4>
+                    <p>Uma cidade rica em história e cultura. Descubra os monumentos da paz, os templos antigos e a incrível culinária local que atrai viajantes do mundo todo.</p>
+                    <a href="#" class="button">Ver detalhes</a>
+                </div>
+            </article>
+
+            <article class="blog-card">
+                <div class="blog-card-thumb img-kyoto"></div>
+                <div class="blog-card-content">
+                    <h4>Kyoto</h4>
+                    <p>Kyoto, o coração tradicional do Japão, encanta com seus milhares de templos clássicos, jardins zen deslumbrantes, palácios imperiais e santuários xintoístas.</p>
+                    <a href="#" class="button">Ver detalhes</a>
+                </div>
+            </article>
+        </div>
+    </section>
 
     <footer class="main-footer">
-      <div class="footer-content">
-        <img src="img/logo-footer.png" alt="logo completo Jornada Viagens" />
-        <p>Desenvolvido por Alura. Projeto fictício sem fins comerciais.</p>
-      </div>
+        <div class="footer-content">
+            <img src="img/logo-footer.png" alt="logo completo Jornada Viagens" />
+            <p>Projeto desenvolvido por Milena Amaral com base nos estudos da Alura.</p>
+        </div>
+        <div class="footer-social">
+            <p>Acesse nossas redes:</p>
+            <a href="#" title="Acesse o Twitter do Jornada Viagens"><img src="img/icone-twitter.svg" alt="icone do Twitter na cor branca" /></a>
+            <a href="#" title="Acesse o Instagram do Jornada Viagens"><img src="img/icone-instagram.svg" alt="icone do Instagram na cor branca" /></a>
+            <a href="#" title="Entre em contato através do whatsapp"><img src="img/icone-whatsapp.svg" alt="icone do whatsapp na cor branca" /></a>
+        </div>
     </footer>
-  </body>
+
+</body>
 </html>
