@@ -1,0 +1,189 @@
+/* ==========================================================================
+   ESTILOS EXCLUSIVOS DA PÁGINA DE CONTATO (contato.css)
+   ========================================================================== */
+
+/* --- HERO DE CONTATO --- */
+.contato-hero {
+    position: relative;
+    width: 100%;
+    min-height: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 48px;
+}
+
+.contato-hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                url('../img/hero-contato-mobile.jpg') no-repeat center center/cover;
+    z-index: 1;
+}
+
+.contato-hero-text {
+    position: relative;
+    z-index: 2;
+    padding: 0 24px;
+    max-width: 600px;
+    color: var(--text-secondary-color);
+}
+
+.contato-hero-text h1 {
+    font-size: 36px;
+    font-weight: var(--title-weight);
+    margin-bottom: 16px;
+}
+
+.contato-hero-text p {
+    font-size: 16px;
+    font-weight: var(--text-weight);
+    line-height: 1.6;
+}
+
+/* --- TEXTO INTRODUTÓRIO E FORMULÁRIO --- */
+.contato-container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.contato-introducao {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: #555555;
+    margin-bottom: 40px;
+}
+
+/* Estilização dos Inputs e Form */
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 48px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Inputs em estilo linha minimalista (conforme o layout) */
+.contato-form input[type="text"],
+.contato-form input[type="tel"],
+.contato-form input[type="email"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    color: var(--text-primary-color);
+    transition: border-color 0.3s ease;
+}
+
+.contato-form input:focus {
+    border-bottom-color: var(--text-primary-color);
+}
+
+/* Textarea e label customizados */
+.label-mensagem {
+    font-size: 15px;
+    color: #999999;
+    margin-bottom: 8px;
+}
+
+.contato-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 16px;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+
+.contato-form textarea:focus {
+    border-color: var(--text-primary-color);
+}
+
+/* Botão Enviar */
+.btn-enviar {
+    width: 100%;
+    height: 48px;
+    line-height: 48px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+/* Banner Decorativo Inferior */
+.contato-footer-banner {
+    width: 100%;
+    height: 300px;
+    background: url('../img/contato-banner-mobile.jpg') no-repeat center center/cover;
+    margin-top: 32px;
+}
+
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsividade)
+   ========================================================================== */
+
+/* --- TABLET BREAKPOINT (768px) --- */
+@media screen and (min-width: 768px) {
+    .contato-hero { min-height: 380px; }
+    
+    .contato-hero-img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                          url('../img/hero-contato-tablet.jpg');
+    }
+    
+    .contato-footer-banner { 
+        background-image: url('../img/contato-banner-tablet.jpg');
+        height: 360px;
+    }
+
+    /* Modifica o form para ficar em duas colunas nos campos menores se desejar, 
+       ou mantém centralizado e elegante */
+    .contato-introducao {
+        font-size: 16px;
+    }
+}
+
+/* --- DESKTOP BREAKPOINT (1024px) --- */
+@media screen and (min-width: 1024px) {
+    .contato-hero { min-height: 440px; }
+    
+    .contato-hero-img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+                          url('../img/hero-contato-desktop.jpg');
+    }
+    
+    .contato-footer-banner { 
+        background-image: url('../img/contato-banner-desktop.jpg');
+        height: 420px;
+    }
+
+    /* No desktop podemos colocar os campos de texto lado a lado para otimizar espaço */
+    .contato-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+    .form-group:nth-child(5),
+    .btn-enviar {
+        grid-column: span 2;
+    }
+}
