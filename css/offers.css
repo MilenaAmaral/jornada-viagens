@@ -38,20 +38,16 @@
 }
 
 .offers-cards .card.japao {
-    background: url(../img/bg-card-japao.jpg) no-repeat;
-    background-size: cover;
+    background: url(../img/home/bg-card-japao.webp) no-repeat center center/cover;
 }
 .offers-cards .card.san-andreas {
-    background: url(../img/bg-card-san-andreas.jpg) no-repeat;
-    background-size: cover;
+    background: url(../img/home/bg-card-san-andreas.webp) no-repeat center center/cover;
 }
 .offers-cards .card.paraiba {
-    background: url(../img/bg-card-paraiba.jpg) no-repeat;
-    background-size: cover;
+    background: url(../img/home/bg-card-paraiba.webp) no-repeat center center/cover;
 }
 .offers-cards .card.manaus {
-    background: url(../img/bg-card-manaus.jpg) no-repeat;
-    background-size: cover;
+    background: url(../img/home/bg-card-manaus.webp) no-repeat center center/cover;
 }
 
 @media screen and (min-width: 768px) {
