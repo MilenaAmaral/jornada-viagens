@@ -148,7 +148,7 @@
 .img-pagamento-1 { background-image: url('../img/galeria-1.jpg'); }
 .img-pagamento-2 { background-image: url('../img/galeria-2.jpg'); }
 .img-pagamento-3 { 
-    background-image: url('../img/galeria-3.jpg'); 
+    background-image: url('../img/galeria-3.jpg');  
     grid-column: span 2; 
     height: 200px;
 }
