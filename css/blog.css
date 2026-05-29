@@ -16,6 +16,12 @@
     margin-bottom: 48px;
 }
 
+/* Ensure blog hero stretches full width like other hero sections */
+.blog-hero {
+    max-width: 100%;
+    margin: 0;
+}
+
 /* Base da imagem do topo */
 .blog-hero-img {
     position: absolute;
@@ -26,6 +32,11 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url('../img/blog/hero-blog-mobile.webp') no-repeat center center/cover;
     z-index: 1;
+}
+
+/* Keep image container fully fluid */
+.blog-hero-img {
+    max-width: 100%;
 }
 
 .blog-hero-text {

@@ -63,8 +63,8 @@
 }
 
 /* Imagens dos destinos carregando mobile por padrão */
-.img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-mobile\ -\ Copia2.webp'); }
-.img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-mobile\ -\ Copia2.webp'); }
+.img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-mobile - Copia2.webp'); }
+.img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-mobile - Copia2.webp'); }
 
 .pacote-destino-info h3 {
     font-size: 24px;
@@ -218,8 +218,8 @@
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
                           url('../img/travel-packages/japan-bg-hero-tablet.webp') no-repeat center center/cover;
     }
-    .img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-tablet-desk\ -\ Copia2.webp'); }
-    .img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-tablet-desk\ -\ Copia2.webp'); }
+    .img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-tablet-desk - Copia2.webp'); }
+    .img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-tablet-desk - Copia2.webp'); }
     .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-tablet.webp'); }
 
     .pacote-destinos-container {
@@ -249,11 +249,11 @@
     
     .pacote-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                          url('../img/travel-packages/hero-pacote-desktop.webp');
+                          url('../img/travel-packages/japan-bg-hero-desktop.webp') no-repeat center center/cover;
     }
     .img-tokyo-detalhe { background-image: url('../img/home/tokyo-tablet-desk.webp'); }
     .img-osaka-detalhe { background-image: url('../img/home/osaka-tablet-desk.webp'); }
-    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-hero-desktop.webp'); }
+    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-desktop.webp'); }
 
     /* Alinhamento refinado para Desktop */
     .pacote-destino-item {

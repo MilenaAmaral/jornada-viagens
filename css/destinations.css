@@ -1,69 +1,67 @@
 .destination-items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
 }
 
 .destinations .item .img-item {
-    width: 100%;
-    height: 368px;
-    border-radius: 8px;
-    background-size: cover;
-    background-position: center;
+  width: 100%;
+  height: 368px;
 }
 .destinations .item.tokyo .img-item {
-    background-image: url('../img/home/tokyo-mobile.webp');
-}
-.destinations .item.osaka .img-item {
-    background-image: url('../img/home/osaka-mobile.webp');
+    background: url(../img/home/tokyo-mobile.webp);
+    background-size: cover;
+  }
+  .destinations .item.osaka .img-item {
+    background: url(../img/home/osaka-mobile.webp);
 }
 
 .destinations .item header h3 {
-    margin: 24px 0;
+  margin: 24px 0;
 }
 .destinations .item p {
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 .destinations .button {
-    width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
-    .destinations {
+  .destinations {
     width: 648px;
-    }
-    .destinations .item .img-item {
+  }
+  .destinations .item .img-item {
     width: 100%;
     height: 452px;
-    }
-    .destinations .item.tokyo .img-item {
-    background-image: url('../img/home/tokyo-tablet-desk.webp');
-    }
-    .destinations .item.osaka .img-item {
-    background-image: url('../img/home/osaka-tablet-desk.webp');
-    }
-    .destinations .button {
+  }
+  .destinations .item.tokyo .img-item {
+    background: url(../img/home/tokyo-tablet-desk.webp);
+    background-size: cover;
+  }
+  .destinations .item.osaka .img-item {
+    background: url(../img/home/osaka-tablet-desk.webp);
+    background-size: cover;
+  }
+  .destinations .button {
     width: 280px;
-    }
+  }
 }
 @media screen and (min-width: 1024px) {
-    .destinations {
+  .destinations {
     width: 900px;
-    }
+  }
 
-    .destinations .item .img-item {
+  .destinations .item .img-item {
     width: 100%;
     height: 452px;
-    }
+  }
 }
 @media screen and (min-width: 1440px) {
-    .destinations {
+  .destinations {
     width: 1200px;
-    }
-    .destination-items {
+  }
+  .destination-items {
     flex-direction: row;
-    gap: 24px;
-    align-items: flex-start;
-    }
+  }
 }

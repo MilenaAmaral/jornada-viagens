@@ -24,11 +24,11 @@
             <img class="img-desktop" src="img/shared/bussola-texto-jornada-branco.png" alt="Logo Jornada Viagens na cor branca" />
         </a>
         <div class="navigation-menu">
-            <label for="menu">
+            <label for="menu" id="menu-button" role="button" tabindex="0" aria-controls="main-navigation" aria-expanded="false">
                 <img src="img/shared/menu.png" alt="menu" />
             </label>
             <input type="checkbox" id="menu" hidden />
-            <nav>
+            <nav id="main-navigation">
                 <ul class="list-links">
                     <li><a href="blog.html" title="Acessar Blog">Blog</a></li>
                     <li><a href="pacotes-de-viagens.html" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
@@ -152,5 +152,6 @@
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 </html>
