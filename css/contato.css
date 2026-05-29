@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('../img/hero-contato-mobile.jpg') no-repeat center center/cover;
+                url('../img/contato/banner-contato-mobile.webp') no-repeat center center/cover;
     z-index: 1;
 }
 
@@ -45,10 +45,33 @@
 }
 
 /* --- TEXTO INTRODUTÓRIO E FORMULÁRIO --- */
+.contato-formulario-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.section-title {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.section-title hr {
+    margin: 8px auto 0; 
+    width: 80px; 
+}
+
 .contato-container {
-    max-width: 768px;
-    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 88px;
     padding: 0 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contato-introducao {
@@ -57,6 +80,7 @@
     text-align: center;
     color: #555555;
     margin-bottom: 40px;
+    max-width: 800px; 
 }
 
 /* Estilização dos Inputs e Form */
@@ -65,15 +89,19 @@
     flex-direction: column;
     gap: 28px;
     margin-bottom: 48px;
+    width: 100%;
+    max-width: 600px; 
+    align-items: center; 
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
     position: relative;
+    width: 100%;
 }
 
-/* Inputs em estilo linha minimalista (conforme o layout) */
+/* Inputs em estilo linha minimalista */
 .contato-form input[type="text"],
 .contato-form input[type="tel"],
 .contato-form input[type="email"] {
@@ -86,17 +114,19 @@
     background: transparent;
     color: var(--text-primary-color);
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .contato-form input:focus {
-    border-bottom-color: var(--text-primary-color);
+    border-bottom-color: var(--secondary-color); 
 }
 
-/* Textarea e label customizados */
+/* Textarea customizado */
 .label-mensagem {
     font-size: 15px;
     color: #999999;
     margin-bottom: 8px;
+    text-align: left;
 }
 
 .contato-form textarea {
@@ -108,82 +138,110 @@
     outline: none;
     resize: vertical;
     transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 .contato-form textarea:focus {
-    border-color: var(--text-primary-color);
+    border-color: var(--secondary-color);
 }
 
-/* Botão Enviar */
-.btn-enviar {
-    width: 100%;
-    height: 48px;
-    line-height: 48px;
-    font-size: 16px;
-    border-radius: 8px;
+/* Botão Enviar  */
+.contato-form .btn-enviar {
+    display: block !important; 
+    width: 280px !important; 
+    height: 64px !important;
+    line-height: 64px !important;
+    font-size: 20px;
+    color: var(--text-secondary-color);
+    background-color: var(--secondary-color);
+    border-radius: 16px;
     border: none;
     cursor: pointer;
-    font-weight: bold;
-    margin-top: 12px;
+    font-weight: var(--title-weight);
+    padding: 0 !important;
+    position: center;
+    
+    float: none !important;
+    clear: both !important;
+    margin: 32px auto 0 !important; 
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.btn-enviar:hover {
+    background-color: var(--primary-color);
 }
 
 /* Banner Decorativo Inferior */
 .contato-footer-banner {
     width: 100%;
+    max-width: 100%;
     height: 300px;
-    background: url('../img/contato-banner-mobile.jpg') no-repeat center center/cover;
-    margin-top: 32px;
+    background: url('../img/contato/rodape-contato-mobile.webp') no-repeat center center/cover;
+    margin: 0;
+    padding: 0;
 }
-
 
 /* ==========================================================================
    MEDIA QUERIES (Responsividade)
    ========================================================================== */
 
-/* --- TABLET BREAKPOINT (768px) --- */
 @media screen and (min-width: 768px) {
-    .contato-hero { min-height: 380px; }
+    .contato-hero { 
+        min-height: 380px; 
+    }
     
     .contato-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                          url('../img/hero-contato-tablet.jpg');
+                          url('../img/contato/banner-contato-tablet.webp');
     }
     
     .contato-footer-banner { 
-        background-image: url('../img/contato-banner-tablet.jpg');
+        background-image: url('../img/contato/rodape-contato-tablet.webp');
         height: 360px;
     }
 
-    /* Modifica o form para ficar em duas colunas nos campos menores se desejar, 
-       ou mantém centralizado e elegante */
     .contato-introducao {
         font-size: 16px;
     }
+    
+    .contato-form {
+        max-width: 500px;
+    }
 }
 
-/* --- DESKTOP BREAKPOINT (1024px) --- */
 @media screen and (min-width: 1024px) {
-    .contato-hero { min-height: 440px; }
+    .contato-hero { 
+        min-height: 440px; 
+    }
     
     .contato-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                          url('../img/hero-contato-desktop.jpg');
+                          url('../img/contato/banner-contato-desktop.webp');
     }
     
     .contato-footer-banner { 
-        background-image: url('../img/contato-banner-desktop.jpg');
+        background-image: url('../img/contato/rodape-contato-desktop.webp');
         height: 420px;
     }
 
-    /* No desktop podemos colocar os campos de texto lado a lado para otimizar espaço */
+    /* Transiciona o formulário para Grid simétrico no Desktop */
     .contato-form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 32px;
+        max-width: 100%; 
+        align-items: stretch;
     }
 
-    .form-group:nth-child(5),
-    .btn-enviar {
+    .contato-form .form-group:nth-child(1), /* Seu nome */
+    .contato-form .form-group:nth-child(4), /* Assunto */
+    .form-group-full {                       /* Mensagem */
         grid-column: span 2;
+    }
+
+    .contato-form .btn-enviar {
+        grid-column: span 2;
+        margin: 12px auto 0 !important;
     }
 }

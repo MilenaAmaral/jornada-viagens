@@ -1,7 +1,3 @@
-/* ==========================================================================
-   ESTILOS EXCLUSIVOS DA PÁGINA DE PACOTES (pacote.css)
-   ========================================================================== */
-
 /* --- HERO DO PACOTE --- */
 .pacote-hero {
     position: relative;
@@ -20,7 +16,7 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                url('../img/japan-bg-bottom-hero-mobile.png') no-repeat center center/cover;
+                url('../img/travel-packages/japan-bg-hero-tablet.webp') no-repeat center center/cover;
     z-index: 1;
 }
 
@@ -67,8 +63,8 @@
 }
 
 /* Imagens dos destinos carregando mobile por padrão */
-.img-tokyo-detalhe { background-image: url('../img/destino-tokyo-mobile.jpg'); }
-.img-osaka-detalhe { background-image: url('../img/destino-osaka-mobile.jpg'); }
+.img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-mobile - Copia2.webp'); }
+.img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-mobile - Copia2.webp'); }
 
 .pacote-destino-info h3 {
     font-size: 24px;
@@ -145,10 +141,10 @@
     background-position: center;
 }
 
-.img-pagamento-1 { background-image: url('../img/galeria-1.jpg'); }
-.img-pagamento-2 { background-image: url('../img/galeria-2.jpg'); }
+.img-pagamento-1 { background-image: url('../img/travel-packages/gallery1-mobile.webp'); }
+.img-pagamento-2 { background-image: url('../img/travel-packages/gallery2-mobile.webp'); }
 .img-pagamento-3 { 
-    background-image: url('../img/galeria-3.jpg');  
+    background-image: url('../img/travel-packages/gallery3-mobile.webp');  
     grid-column: span 2; 
     height: 200px;
 }
@@ -205,13 +201,13 @@
     width: 100%;
     height: 280px;
     border-radius: 8px;
-    background: url('../img/travel-packages/japan-bg-bottom-hero-mobile.png') no-repeat center center/cover;
+    background: url('../img/travel-packages/japan-bg-bottom-hero-mobile.webp') no-repeat center center/cover;
     margin-top: 24px;
 }
 
 
 /* ==========================================================================
-   MEDIA QUERIES (Responsividade Integrada)
+   MEDIA QUERIES 
    ========================================================================== */
 
 /* --- TABLET BREAKPOINT (768px) --- */
@@ -220,11 +216,11 @@
     
     .pacote-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                          url('../img/travel-packages/japan-bg-bottom-hero-tablet.png');
+                          url('../img/travel-packages/japan-bg-hero-tablet.webp') no-repeat center center/cover;
     }
-    .img-tokyo-detalhe { background-image: url('../img/destino-tokyo-tablet.jpg'); }
-    .img-osaka-detalhe { background-image: url('../img/destino-osaka-tablet.jpg'); }
-    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-tablet.png'); }
+    .img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-tablet-desk - Copia2.webp'); }
+    .img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-tablet-desk - Copia2.webp'); }
+    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-tablet.webp'); }
 
     .pacote-destinos-container {
         display: grid;
@@ -253,11 +249,11 @@
     
     .pacote-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                          url('../img/travel-packages/japan-bg-bottom-hero-desktop.png');
+                          url('../img/travel-packages/japan-bg-hero-desktop.webp') no-repeat center center/cover;
     }
-    .img-tokyo-detalhe { background-image: url('../img/destino-tokyo-desktop.jpg'); }
-    .img-osaka-detalhe { background-image: url('../img/destino-osaka-desktop.jpg'); }
-    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-desktop.png'); }
+    .img-tokyo-detalhe { background-image: url('../img/home/tokyo-tablet-desk.webp'); }
+    .img-osaka-detalhe { background-image: url('../img/home/osaka-tablet-desk.webp'); }
+    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-desktop.webp'); }
 
     /* Alinhamento refinado para Desktop */
     .pacote-destino-item {

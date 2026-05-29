@@ -7,12 +7,12 @@
 
     <meta name="og:title" content="Excursão Japão - Jornada Viagens">
     <meta name="og:description" content="A jornada para o Oriente perfeito para você relaxar.">
-    <meta name="og:image" content="img/logo-footer.png">
+    <meta name="og:image" content="img/shared/logo-footer.png">
     <meta name="og:type" content="website">
 
     <link rel="icon" href="favico.png" type="xml/svg" />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/pacote.css" />
+    <link rel="stylesheet" href="./css/pacotes-de-viagens.css" />
 
     <title>Excursão Japão - Jornada Viagens</title>
 </head>
@@ -20,15 +20,15 @@
 
     <header class="main-header">
         <a class="logo" href="index.html" title="voltar para a página inicial">
-            <img class="img-mobile" src="img/bussola-jornada-branco.png" alt="Bussola do logo Jornada Viagens na cor branca" />
-            <img class="img-desktop" src="img/bussola-texto-jornada-branco.png" alt="Logo Jornada Viagens na cor branca" />
+            <img class="img-mobile" src="img/shared/bussola-jornada-branco.png" alt="Bussola do logo Jornada Viagens na cor branca" />
+            <img class="img-desktop" src="img/shared/bussola-texto-jornada-branco.png" alt="Logo Jornada Viagens na cor branca" />
         </a>
         <div class="navigation-menu">
-            <label for="menu">
-                <img src="img/menu.png" alt="menu" />
+            <label for="menu" id="menu-button" role="button" tabindex="0" aria-controls="main-navigation" aria-expanded="false">
+                <img src="img/shared/menu.png" alt="menu" />
             </label>
             <input type="checkbox" id="menu" hidden />
-            <nav>
+            <nav id="main-navigation">
                 <ul class="list-links">
                     <li><a href="blog.html" title="Acessar Blog">Blog</a></li>
                     <li><a href="pacotes-de-viagens.html" title="Acessar Pacotes de viagem">Pacotes de viagem</a></li>
@@ -105,7 +105,7 @@
             <article class="depoimento-card">
                 <p class="depoimento-texto">"A Jornada foi uma das melhores agências de viagens que eu já experimentei. O serviço ao cliente foi excepcional, e toda a equipe foi muito atenciosa e prestativa."</p>
                 <footer class="depoimento-autor">
-                    <img src="img/travel-packages/avatar-julio.png" alt="Foto de Júlio Cardozo" />
+                    <img src="img/travel-packages/avatar-julio.webp" alt="Foto de Júlio Cardozo" />
                     <div class="autor-info">
                         <h4>Júlio Cardozo</h4>
                         <div class="estrelas">★★★★★</div>
@@ -116,7 +116,7 @@
             <article class="depoimento-card">
                 <p class="depoimento-texto">"Planejar a ida para o Tóquio com eles foi muito mais simples e seguro do que eu imaginava. Recomendo muito o atendimento diferenciado da agência!"</p>
                 <footer class="depoimento-autor">
-                    <img src="img/travel-packages/avatar-lucia.png" alt="Foto de Luísa S. Rebello" />
+                    <img src="img/travel-packages/avatar-lucia.webp" alt="Foto de Luísa S. Rebello" />
                     <div class="autor-info">
                         <h4>Luísa S. Rebello</h4>
                         <div class="estrelas">★★★★★</div>
@@ -127,7 +127,7 @@
             <article class="depoimento-card">
                 <p class="depoimento-texto">"Minha experiência com o Japão foi fantástica! A equipe nos apoiou de forma super atenciosa, recomendo a todos com certeza!"</p>
                 <footer class="depoimento-autor">
-                    <img src="img/travel-packages/avatar-olga.png" alt="Foto de Olga das Dores" />
+                    <img src="img/travel-packages/avatar-olga.webp" alt="Foto de Olga das Dores" />
                     <div class="autor-info">
                         <h4>Olga das Dores</h4>
                         <div class="estrelas">★★★★★</div>
@@ -141,16 +141,17 @@
 
     <footer class="main-footer">
         <div class="footer-content">
-            <img src="img/logo-footer.png" alt="logo completo Jornada Viagens" />
+            <img src="img/shared/logo-footer.png" alt="logo completo Jornada Viagens" />
             <p>Projeto desenvolvido por Milena Amaral com base nos estudos da Alura.</p>
         </div>
         <div class="footer-social">
             <p>Acesse nossas redes:</p>
-            <a href="#" title="Acesse o Twitter do Jornada Viagens"><img src="img/icone-twitter.svg" alt="icone do Twitter na cor branca" /></a>
-            <a href="#" title="Acesse o Instagram do Jornada Viagens"><img src="img/icone-instagram.svg" alt="icone do Instagram na cor branca" /></a>
-            <a href="#" title="Entre em contato através do whatsapp"><img src="img/icone-whatsapp.svg" alt="icone do whatsapp na cor branca" /></a>
+            <a href="#" title="Acesse o Twitter do Jornada Viagens"><img src="img/home/icone-twitter.svg" alt="icone do Twitter na cor branca" /></a>
+            <a href="#" title="Acesse o Instagram do Jornada Viagens"><img src="img/home/icone-instagram.svg" alt="icone do Instagram na cor branca" /></a>
+            <a href="#" title="Entre em contato através do whatsapp"><img src="img/home/icone-whatsapp.svg" alt="icone do whatsapp na cor branca" /></a>
         </div>
     </footer>
 
+    <script src="./js/menu.js"></script>
 </body>
 </html>

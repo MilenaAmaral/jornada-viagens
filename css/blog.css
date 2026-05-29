@@ -16,6 +16,12 @@
     margin-bottom: 48px;
 }
 
+/* Ensure blog hero stretches full width like other hero sections */
+.blog-hero {
+    max-width: 100%;
+    margin: 0;
+}
+
 /* Base da imagem do topo */
 .blog-hero-img {
     position: absolute;
@@ -24,8 +30,13 @@
     width: 100%;
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                url('../img/hero-blog-mobile.jpg') no-repeat center center/cover;
+                url('../img/blog/hero-blog-mobile.webp') no-repeat center center/cover;
     z-index: 1;
+}
+
+/* Keep image container fully fluid */
+.blog-hero-img {
+    max-width: 100%;
 }
 
 .blog-hero-text {
@@ -77,7 +88,7 @@
     width: 100%;
     height: 220px;
     border-radius: 8px;
-    background: url('../img/tokyo-fachada-mobile.png') no-repeat center center/cover;
+    background: url('../img/home/tokyo-fachada-mobile.webp') no-repeat center center/cover;
 }
 
 .blog-panoramic-container {
@@ -85,7 +96,7 @@
     height: 160px;
     border-radius: 8px;
     margin: 32px 0;
-    background: url('../img/tokyo-panoramica-mobile.png') no-repeat center center/cover;
+    background: url('../img/blog/tokyo-panoramica-mobile.webp') no-repeat center center/cover;
 }
 
 /* --- GRID DE CARDS DO BLOG --- */
@@ -111,9 +122,9 @@
 }
 
 /* Imagens dos cards inferiores */
-.img-osaka { background-image: url('../img/osaka-mobile.jpg'); }
-.img-hiroshima { background-image: url('../img/hiroshima-mobile.png'); }
-.img-kyoto { background-image: url('../img/kyoto-mobile.png'); }
+.img-osaka { background-image: url('../img/home/osaka-mobile.webp'); }
+.img-hiroshima { background-image: url('../img/blog/hiroshima-mobile.webp'); }
+.img-kyoto { background-image: url('../img/blog/kyoto-mobile.webp'); }
 
 .blog-card-content {
     padding: 16px 0;
@@ -152,13 +163,13 @@
     /* Carrega as fotos cortadas para tablet */
     .blog-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                          url('../img/hero-blog-tablet.png');
+                          url('../img/blog/hero-blog-tablet.webp');
     }
     .img-tokyo-fachada { 
-        background-image: url('../img/tokyo-fachada-tablet.png'); 
+        background-image: url('../img/home/tokyo-fachada-tablet.webp'); 
     }
     .img-tokyo-panoramica { 
-        background-image: url('../img/tokyo-panoramica-tablet.png'); 
+        background-image: url('../img/blog/tokyo-panoramica-tablet.webp'); 
     }
 
     .blog-hero-text {
@@ -188,13 +199,13 @@
     /* Carrega as fotos em alta resolução para desktop */
     .blog-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                          url('../img/hero-blog-desktop.png');
+                          url('../img/blog/hero-blog-desktop.webp');
     }
     .img-tokyo-fachada { 
-        background-image: url('../img/tokyo-fachada-desktop.jpg'); 
+        background-image: url('../img/home/tokyo-fachada-desktop.webp'); 
     }
     .img-tokyo-panoramica { 
-        background-image: url('../img/tokyo-panoramica-desktop.png'); 
+        background-image: url('../img/blog/tokyo-panoramica-desktop.webp'); 
     }
 
     .blog-post-row {
