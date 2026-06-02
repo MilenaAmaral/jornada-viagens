@@ -55,14 +55,11 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 48px;
-    max-width: 100%;
-    margin: 0;
 }
 
 /* Ensure blog hero stretches full width like other hero sections */
 .blog-hero {
     max-width: 100%;
-    margin: 0;
 }
 
 /* Base da imagem do topo */
@@ -75,7 +72,6 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url('../img/blog/hero-blog-mobile.webp') no-repeat center center/cover;
     z-index: 1;
-    max-width: 100%;
 }
 
 /* Keep image container fully fluid */
@@ -261,8 +257,7 @@
         min-height: 450px;
     }
     .blog-hero-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                          url('../img/blog/hero-blog-desktop.webp');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/blog/hero-blog-desktop.webp');
     }
     .img-tokyo-fachada { 
         background-image: url('../img/home/tokyo-fachada-desktop.webp'); 
