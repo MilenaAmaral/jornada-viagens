@@ -54,9 +54,8 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-bottom: 48px;
+    margin-bottom: 40px;
     max-width: 100%;
-    margin: 0;
 }
 
 /* Base da imagem do topo */
