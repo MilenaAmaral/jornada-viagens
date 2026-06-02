@@ -1,11 +1,64 @@
-/* --- HERO DO PACOTE --- */
+/* ==========================================================================
+   PÁGINA: PACOTES DE VIAGENS 
+   ========================================================================== */
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- HEADER E MENU HAMBÚRGUER --- */
+.main-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--background-tertiary-color);
+    z-index: 100;
+}
+
+#main-navigation {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-tertiary-color);
+    padding: 20px 24px;
+    z-index: 99;
+}
+
+.list-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.list-links a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: var(--menu-text-weight);
+}
+
+#menu:checked ~ #main-navigation {
+    display: block; 
+}
+
+/* --- HERO DO PACOTE  --- */
 .pacote-hero {
     position: relative;
-    width: 100%;
-    min-height: 340px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    min-height: 380px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 0;
     margin-bottom: 48px;
 }
 
@@ -24,7 +77,9 @@
     position: relative;
     z-index: 2;
     padding: 0 24px;
-    max-width: 600px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
     color: var(--text-secondary-color);
 }
 
@@ -38,9 +93,10 @@
     font-size: 16px;
     font-weight: var(--text-weight);
     line-height: 1.6;
+    max-width: 600px;
 }
 
-/* --- SEÇÃO DESTINOS DA EXCURSÃO (Mobile First) --- */
+/* --- SEÇÃO DESTINOS DA EXCURSÃO --- */
 .pacote-destinos-container {
     display: flex;
     flex-direction: column;
@@ -51,6 +107,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--background-primary-color);
+    height: 100%; 
 }
 
 .pacote-destino-thumb {
@@ -62,9 +119,15 @@
     background-repeat: no-repeat;
 }
 
-/* Imagens dos destinos carregando mobile por padrão */
 .img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-mobile - Copia2.webp'); }
 .img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-mobile - Copia2.webp'); }
+
+.pacote-destino-info {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
+    padding: 16px 0;
+}
 
 .pacote-destino-info h3 {
     font-size: 24px;
@@ -85,6 +148,8 @@
     line-height: 48px;
     font-size: 16px;
     border-radius: 8px;
+    margin-top: auto; 
+    text-align: center;
 }
 
 /* --- SEÇÃO PAGAMENTO --- */
@@ -125,9 +190,10 @@
     line-height: 48px;
     font-size: 16px;
     border-radius: 8px;
+    text-align: center;
 }
 
-/* Galeria Mosaico Vertical no Mobile */
+/* Galeria Mosaico */
 .pacote-pagamento-galeria {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -146,21 +212,28 @@
 .img-pagamento-3 { 
     background-image: url('../img/travel-packages/gallery3-mobile.webp');  
     grid-column: span 2; 
-    height: 200px;
+    height: 180px;
 }
 
-/* --- DEPOIMENTOS E BANNER FINAL --- */
+/* --- DEPOIMENTOS --- */
 .pacote-depoimentos-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin-bottom: 40px;
+    display: grid !important;
+    grid-template-columns: 1fr !important; 
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: visible !important;
 }
 
 .depoimento-card {
     background-color: var(--background-secondary-color);
     padding: 24px;
     border-radius: 8px;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    box-sizing: border-box !important;
 }
 
 .depoimento-texto {
@@ -172,16 +245,22 @@
 }
 
 .depoimento-autor {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    display: flex !important;
+    align-items: center !important;
+    gap: 16px !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    position: static !important;
 }
 
 .depoimento-autor img {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
 }
 
 .autor-info h4 {
@@ -191,90 +270,155 @@
 }
 
 .estrelas {
-    color: #e67e22;
+    color: #ffc107; 
     font-size: 14px;
     margin-top: 4px;
 }
 
-/* Foto decorativa final */
+/* BANNER DE RODAPÉ */
 .pacote-footer-banner {
-    width: 100%;
-    height: 280px;
-    border-radius: 8px;
+    display: block;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    height: 340px;
     background: url('../img/travel-packages/japan-bg-bottom-hero-mobile.webp') no-repeat center center/cover;
-    margin-top: 24px;
+    margin-top: 48px;
+    margin-bottom: 0 !important;
+    padding: 0 !important;
 }
 
+.main-footer {
+    background-color: #000000 !important;
+    margin-top: 0 !important;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 40px 24px;
+    box-sizing: border-box;
+}
+
+.main-footer .footer-content, 
+.main-footer .footer-social {
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 /* ==========================================================================
-   MEDIA QUERIES 
+   MEDIA QUERIES (Responsividade)
    ========================================================================== */
 
 /* --- TABLET BREAKPOINT (768px) --- */
 @media screen and (min-width: 768px) {
-    .pacote-hero { min-height: 380px; }
+    #menu-button { display: none; }
     
-    .pacote-hero-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                          url('../img/travel-packages/japan-bg-hero-tablet.webp') no-repeat center center/cover;
+    #main-navigation {
+        display: block !important;
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
     }
+    
+    .list-links { flex-direction: row; gap: 32px; }
+
+    .pacote-hero { 
+        min-height: 420px; 
+        width: 100% !important;
+        max-width: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        left: 0 !important;
+        transform: none !important;
+    }
+
+    .pacote-hero-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100% !important;
+        height: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
+                    url('../img/travel-packages/japan-bg-hero-desktop.webp') no-repeat center center / cover !important;
+    }
+    
+    .pacote-destino-thumb { height: 360px; }
+
     .img-tokyo-detalhe { background-image: url('../img/travel-packages/tokyo-tablet-desk - Copia2.webp'); }
     .img-osaka-detalhe { background-image: url('../img/travel-packages/osaka-tablet-desk - Copia2.webp'); }
-    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-tablet.webp'); }
 
-    .pacote-destinos-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-    }
-
-    .pacote-pagamento-container {
-        flex-direction: row;
-        align-items: center;
-    }
-    .pacote-pagamento-valores, .pacote-pagamento-galeria {
-        flex: 1;
-    }
-
-    .pacote-depoimentos-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+    .img-pagamento-1 { background-image: url('../img/travel-packages/gallery1-tablet.webp'); }
+    .img-pagamento-2 { background-image: url('../img/travel-packages/gallery2-tablet.webp'); }
+    .img-pagamento-3 { background-image: url('../img/travel-packages/gallery3-tablet.webp'); }
+    
+    .pacote-footer-banner { 
+        height: 440px;
+        width: 100% !important;
+        max-width: none !important;
+        left: 0 !important;
+        transform: none !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        background: url('../img/travel-packages/japan-bg-bottom-hero-tablet.webp') no-repeat center center / cover !important; 
     }
 }
 
 /* --- DESKTOP BREAKPOINT (1024px) --- */
 @media screen and (min-width: 1024px) {
-    .pacote-hero { min-height: 440px; }
+    .pacote-hero { min-height: 520px; }
     
     .pacote-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), 
-                          url('../img/travel-packages/japan-bg-hero-desktop.webp') no-repeat center center/cover;
+                          url('../img/travel-packages/japan-bg-hero-desktop.webp');
     }
     .img-tokyo-detalhe { background-image: url('../img/home/tokyo-tablet-desk.webp'); }
     .img-osaka-detalhe { background-image: url('../img/home/osaka-tablet-desk.webp'); }
-    .pacote-footer-banner { background-image: url('../img/travel-packages/japan-bg-bottom-hero-desktop.webp'); }
-
-    /* Alinhamento refinado para Desktop */
-    .pacote-destino-item {
-        flex-direction: row;
-        gap: 24px;
-        align-items: center;
-        grid-column: span 2;
-    }
-    .pacote-destino-thumb {
-        flex: 1;
-        height: 280px;
-    }
-    .pacote-destino-info {
-        flex: 1.2;
-    }
-
-    .pacote-depoimentos-grid {
-        grid-template-columns: repeat(3, 1fr);
+    
+    .pacote-destinos-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
     }
     
+    .pacote-destino-thumb { height: 280px; }
+
+    .pacote-destino-item {
+        flex-direction: column;
+        align-items: unset;
+        grid-column: auto;
+    }
+
+    .pacote-pagamento-container {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 64px;
+        align-items: center;
+    }
+
+    .img-pagamento-1 { background-image: url('../img/travel-packages/gallery1-tablet.webp'); }
+    .img-pagamento-2 { background-image: url('../img/travel-packages/gallery2-tablet.webp'); }
+    .img-pagamento-3 { background-image: url('../img/travel-packages/gallery3-tablet.webp'); }
+
+    .pacote-depoimentos-grid {
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important; 
+        gap: 24px !important;
+        width: 100% !important;
+        max-width: 1200px;
+        margin: 0 auto;
+        overflow: visible !important;
+    }
+
     .pacote-footer-banner {
-        height: 380px;
+        height: 540px;
+        background-image: url('../img/travel-packages/japan-bg-bottom-hero-desktop.webp');
+    }
+    
+    .main-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 80px;
     }
 }
