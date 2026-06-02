@@ -5,6 +5,47 @@
     color: var(--text-primary-color);
 }
 
+/* --- CABEÇALHO E MENU HAMBÚRGUER (Ajustes para Mobile) --- */
+.main-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    background-color: var(--background-tertiary-color);
+    z-index: 100;
+}
+
+#main-navigation {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--background-tertiary-color);
+    padding: 20px 24px;
+    z-index: 99;
+}
+
+/* Faz a lista de links quebrar em colunas no mobile */
+.list-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none;
+}
+
+.list-links a {
+    color: var(--text-secondary-color);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: var(--menu-text-weight);
+}
+
+#menu:checked ~ #main-navigation {
+    display: block;
+}
+
 /* --- HERO INDIVIDUAL DO BLOG --- */
 .blog-hero {
     position: relative;
@@ -14,6 +55,8 @@
     align-items: center;
     justify-content: flex-start;
     margin-bottom: 48px;
+    max-width: 100%;
+    margin: 0;
 }
 
 /* Ensure blog hero stretches full width like other hero sections */
@@ -32,6 +75,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                 url('../img/blog/hero-blog-mobile.webp') no-repeat center center/cover;
     z-index: 1;
+    max-width: 100%;
 }
 
 /* Keep image container fully fluid */
@@ -110,6 +154,7 @@
     display: flex;
     flex-direction: column;
     background-color: var(--background-primary-color);
+    height: 100%; 
 }
 
 .blog-card-thumb {
@@ -130,6 +175,7 @@
     padding: 16px 0;
     display: flex;
     flex-direction: column;
+    flex-grow: 1; 
 }
 
 .blog-card-content h4 {
@@ -153,14 +199,32 @@
     line-height: 48px;
     font-size: 16px;
     border-radius: 8px;
+    margin-top: auto;
 }
 
 /* --- TABLET (A partir de 768px) --- */
 @media screen and (min-width: 768px) {
+    /* Resetando o Menu Hamburguer para formato de linha horizontal no Desktop/Tablet */
+    #menu-button {
+        display: none; 
+    }
+
+    #main-navigation {
+        display: block !important; 
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .list-links {
+        flex-direction: row; 
+        gap: 32px;
+    }
+
     .blog-hero {
         min-height: 400px;
     }
-    /* Carrega as fotos cortadas para tablet */
     .blog-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                           url('../img/blog/hero-blog-tablet.webp');
@@ -196,7 +260,6 @@
     .blog-hero {
         min-height: 450px;
     }
-    /* Carrega as fotos em alta resolução para desktop */
     .blog-hero-img {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
                           url('../img/blog/hero-blog-desktop.webp');
